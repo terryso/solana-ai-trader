@@ -1,0 +1,28 @@
+[Unit]
+Description=Solana AI Trader
+After=network.target
+
+[Service]
+Type=simple
+User=trader
+WorkingDirectory=/home/trader/solana-ai-trader/backend
+Environment="PATH=/home/trader/solana-ai-trader/venv/bin"
+EnvironmentFile=/home/trader/solana-ai-trader/backend/.env
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=append:/home/trader/solana-ai-trader/logs/output.log
+StandardError=append:/home/trader/solana-ai-trader/logs/error.log
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+
+# Run the application
+ExecStart=/home/trader/solana-ai-trader/venv/bin/uvicorn src.api:app --host 0.0.0.0 --port 8000 --workers 4
+
+[Install]
+WantedBy=multi-user.target

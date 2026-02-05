@@ -1,0 +1,43 @@
+# Solana
+solana-py==0.34.0
+solders==0.19.1
+base58==2.1.1
+
+# HTTP Client
+httpx==0.27.0
+requests==2.31.0
+
+# Data Processing
+pandas==2.2.0
+numpy==1.26.4
+
+# LLM
+anthropic==0.40.0
+openai==1.52.0
+
+# Database
+supabase==2.7.0
+redis==5.0.8
+sqlalchemy==2.0.35
+
+# API Framework
+fastapi==0.115.0
+uvicorn==0.32.1
+pydantic==2.9.0
+pydantic-settings==2.6.0
+
+# Async
+aiohttp==3.10.11
+aiofiles==24.1.0
+
+# Utilities
+python-dotenv==1.0.1
+python-json-logger==2.0.7
+pyyaml==6.0.2
+
+# Security
+cryptography==43.0.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
