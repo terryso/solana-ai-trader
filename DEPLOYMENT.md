@@ -2,6 +2,10 @@
 
 This guide covers deploying Solana AI Trader to production.
 
+**[简体中文](docs/DEPLOYMENT_CN.md) | English**
+
+---
+
 ## Table of Contents
 
 1. [Quick Start (Docker)](#quick-start-docker)

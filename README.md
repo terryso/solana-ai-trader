@@ -2,6 +2,10 @@
 
 Automated Solana trading system powered by LLM analysis.
 
+**[简体中文](README_CN.md) | English**
+
+---
+
 ## Features
 
 - Real-time Solana blockchain monitoring

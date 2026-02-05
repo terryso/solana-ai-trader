@@ -2,6 +2,8 @@
 
 Complete guide to using the Solana AI Trader system.
 
+**[简体中文](docs/USER_MANUAL_CN.md) | English**
+
 ---
 
 ## Table of Contents
