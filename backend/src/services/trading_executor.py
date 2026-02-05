@@ -3,10 +3,9 @@ import json
 from typing import Optional, Dict, Any, List
 from dataclasses import dataclass
 
-from solana.keypair import Keypair
-from solana.transaction import Transaction
+from solders.keypair import Keypair
 from solders.pubkey import Pubkey
-from solders.keypair import Keypair as SoldersKeypair
+from solders.transaction import VersionedTransaction
 
 from src.config import settings
 from src.utils import logger, format_sol, format_usd, truncate_address
@@ -62,7 +61,7 @@ class TradingExecutor:
       # Assuming private key is in base58 format
       # You may need to adjust this based on your key format
       keypair_bytes = base58.b58decode(settings.solana_wallet_private_key)
-      return Keypair.from_bytes(keypair_bytes[:32])  # First 32 bytes for private key
+      return Keypair.from_bytes(keypair_bytes)
     except Exception as e:
       logger.error(f'Error loading wallet: {e}')
       return None
@@ -75,7 +74,7 @@ class TradingExecutor:
         Wallet address or None
     """
     if self.wallet_keypair:
-      return str(self.wallet_keypair.public_key)
+      return str(self.wallet_keypair.pubkey())
     return None
 
   async def get_wallet_balance(self) -> float:

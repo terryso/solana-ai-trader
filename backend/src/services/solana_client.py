@@ -1,7 +1,4 @@
 from solana.rpc.api import Client
-from solana.rpc.commitment import Confirmed
-from solana.publickey import PublicKey
-from solders.pubkey import Pubkey
 from typing import Optional, Dict, Any
 import httpx
 
