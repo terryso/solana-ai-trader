@@ -8,12 +8,13 @@ from .base import BaseLLMClient, LLMResponse, TradingAnalysis
 
 
 class OpenAIClient(BaseLLMClient):
-  """OpenAI API client (fallback option)."""
+  """OpenAI API client (supports OpenAI-compatible APIs)."""
 
   def __init__(
     self,
     api_key: Optional[str] = None,
-    model: Optional[str] = None
+    model: Optional[str] = None,
+    base_url: Optional[str] = None
   ):
     """
     Initialize OpenAI client.
@@ -21,13 +22,19 @@ class OpenAIClient(BaseLLMClient):
     Args:
         api_key: OpenAI API key (defaults to settings)
         model: Model name (defaults to settings)
+        base_url: Custom base URL for OpenAI-compatible APIs (defaults to settings)
     """
     api_key = api_key or settings.openai_api_key
     model = model or settings.llm_model
+    base_url = base_url or settings.openai_base_url
 
     super().__init__(api_key, model)
 
-    self.client = openai.AsyncOpenAI(api_key=api_key)
+    # Initialize client with custom base URL support
+    self.client = openai.AsyncOpenAI(
+      api_key=api_key,
+      base_url=base_url
+    )
 
   @async_retry(max_retries=3, delay=1.0)
   async def generate(

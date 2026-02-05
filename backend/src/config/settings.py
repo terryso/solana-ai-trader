@@ -18,6 +18,7 @@ class Settings(BaseSettings):
   # LLM Configuration
   anthropic_api_key: str = ''
   openai_api_key: str = ''
+  openai_base_url: str = 'https://api.openai.com/v1'  # Custom base URL for OpenAI-compatible APIs
   llm_provider: Literal['anthropic', 'openai'] = 'anthropic'
   llm_model: str = 'claude-3-5-sonnet-20241022'
 
