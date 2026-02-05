@@ -2,7 +2,7 @@
 
 本指南涵盖将Solana AI Trader部署到生产环境的完整流程。
 
-[English](../DEPLOYMENT.md) | 简体中文
+[English](DEPLOYMENT.md) | 简体中文
 
 ---
 

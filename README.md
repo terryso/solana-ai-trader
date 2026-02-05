@@ -177,7 +177,7 @@ docker-compose down
 
 ### Manual Deployment
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions including:
+See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions including:
 - Automated installation script
 - Systemd service setup
 - Nginx reverse proxy
@@ -198,9 +198,9 @@ sudo systemctl status solana-ai-trader
 
 ## Documentation
 
-- [USER_MANUAL.md](USER_MANUAL.md) - Complete user guide
-- [DEPLOYMENT.md](DEPLOYMENT.md) - Deployment guide
-- [NOTIFICATIONS.md](NOTIFICATIONS.md) - Notification setup
+- [docs/USER_MANUAL.md](docs/USER_MANUAL.md) - Complete user guide
+- [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) - Deployment guide
+- [docs/NOTIFICATIONS.md](docs/NOTIFICATIONS.md) - Notification setup
 
 ## Roadmap
 

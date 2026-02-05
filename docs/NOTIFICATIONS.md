@@ -2,7 +2,7 @@
 
 This guide explains how to set up Telegram and Discord notifications for the Solana AI Trader.
 
-**[简体中文](docs/NOTIFICATIONS_CN.md) | English**
+**[简体中文](NOTIFICATIONS_CN.md) | English**
 
 ---
 

@@ -2,7 +2,7 @@
 
 Guide to configuring Solana AI Trader with various LLM providers, including Chinese domestic models.
 
-English | **[简体中文](docs/LLM_SETUP_CN.md)**
+English | **[简体中文](LLM_SETUP_CN.md)**
 
 ---
 

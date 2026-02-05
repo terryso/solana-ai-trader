@@ -2,7 +2,7 @@
 
 本指南说明如何为Solana AI Trader设置Telegram和Discord通知。
 
-[English](../NOTIFICATIONS.md) | 简体中文
+[English](NOTIFICATIONS.md) | 简体中文
 
 ---
 

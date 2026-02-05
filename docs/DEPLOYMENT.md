@@ -2,7 +2,7 @@
 
 This guide covers deploying Solana AI Trader to production.
 
-**[简体中文](docs/DEPLOYMENT_CN.md) | English**
+**[简体中文](DEPLOYMENT_CN.md) | English**
 
 ---
 

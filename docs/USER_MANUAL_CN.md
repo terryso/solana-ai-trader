@@ -1,6 +1,6 @@
 # Solana AI Trader - 用户手册
 
-[English](../USER_MANUAL.md) | 简体中文
+[English](USER_MANUAL.md) | 简体中文
 
 完整的Solana AI Trader系统使用指南。
 

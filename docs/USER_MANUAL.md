@@ -2,7 +2,7 @@
 
 Complete guide to using the Solana AI Trader system.
 
-**[简体中文](docs/USER_MANUAL_CN.md) | English**
+**[简体中文](USER_MANUAL_CN.md) | English**
 
 ---
 
@@ -1079,7 +1079,7 @@ async def analyze_multiple_tokens():
 
 ### Documentation
 
-- [README.md](README.md) - Project overview
+- [README.md](../README.md) - Project overview
 - [DEPLOYMENT.md](DEPLOYMENT.md) - Deployment guide
 - [NOTIFICATIONS.md](NOTIFICATIONS.md) - Notification setup
 
